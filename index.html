@@ -1,96 +1,221 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script defer src="/_vercel/insights/script.js"></script>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css"
-    />
-    <title>Vercel HTML Starter</title>
-    <meta
-      name="description"
-      content="High-performance HTML based website template."
-    />
-  </head>
-  <body>
-    <h1>Vercel HTML Starter</h1>
-    <p>
-      This template is a simple, but powerful single
-      <code>index.html</code> file deployed to
-      <a href="https://vercel.com">Vercel</a>. When your site is deployed, all
-      static assets (like HTML, JavaScript, CSS, images, and more) are deployed
-      globally to every
-      <a href="https://vercel.com/docs/concepts/edge-network/overview"
-        >Vercel Edge Network</a
-      >
-      region.
-    </p>
-    <h2>Simple, privacy-friendly analytics</h2>
-    <p>
-      Want to understand your visitor traffic? Vercel Analytics gives you
-      first-party, privacy-friendly traffic analytics for your HTML site. This
-      template is already configured using the following script:
-    </p>
-    <pre><code>&lt;script defer src="/_vercel/insights/script.js"&gt;&lt;/script&gt;</code></pre>
-    <p>
-      Learn more about
-      <a href="https://vercel.com/analytics">Vercel Analytics</a>.
-    </p>
-    <h2>Integrated with git</h2>
-    <p>
-      Deploying updates to your site is as simple as
-      <code>git push</code> thanks to Vercel's advanced
-      <a href="https://vercel.com/docs/concepts/git">Git Integration</a>.
-      Support for GitHub, GitLab, Bitbucket is zero-configuration, and with the
-      flexible Vercel CLI and API, you can integrate with any tool possible.
-    </p>
-    <p>
-      Learn more about
-      <a href="https://vercel.com/docs/concepts/git">Git Integration</a>.
-    </p>
-    <h2>Fast <code>gzip</code> compression</h2>
-    <p>
-      To help ensure the smallest possible file sizes for your static assets,
-      the Vercel Edge Network compresses files by default using
-      <code>gzip</code>. You can also optionally use
-      <code>brotli</code> compressesion if you prefer.
-    </p>
-    <p>
-      Learn more about
-      <a href="https://vercel.com/docs/concepts/edge-network/compression"
-        >compression</a
-      >.
-    </p>
-    <h2>Advanced routing configuration</h2>
-    <p>
-      Vercel gives you a variety of ways to configure the routing of your
-      website. For example, adding redirects, rewrites, or headers to your page.
-      While you can use <code>vercel.json</code> to define these through JSON,
-      you can also express your routing configuration as code using
-      <a href="https://vercel.com/docs/concepts/functions/edge-middleware"
-        >Vercel Edge Middleware</a
-      >.
-    </p>
-    <p>
-      Middleware runs before the
-      <a href="https://vercel.com/docs/concepts/edge-network/caching"
-        >Vercel Edge Network Cache</a
-      >, so you can configure routing exactly as your application needs. For
-      example, this template uses <code>middleware.js</code> defined in the root
-      of the repository to add additional security headers to the site:
-    </p>
-    <pre><code>referrer-policy: origin-when-cross-origin
-strict-transport-security: max-age=31536000; includeSubDomains; preload
-x-content-type-options: nosniff
-x-dns-prefetch-control: on
-x-frame-options: DENY</code></pre>
-    <p>
-      Learn more about
-      <a href="https://vercel.com/docs/concepts/functions/edge-middleware"
-        >Vercel Edge Middleware</a
-      >.
-    </p>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fluffy HÜGS</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@600;700;800&family=Nunito:wght@700;800;900&display=swap" rel="stylesheet">
+  <!-- FontAwesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- ================= SECTION 1: FULLSCREEN LOADING PAGE ================= -->
+  <section class="loading-screen" id="loadingScreen">
+    <div class="loading-content">
+      <div class="character-wrapper" id="loadingChar">
+        <img src="assets/loading/loading.webp" alt="Loading Character" class="char-img" onerror="this.src='loading.jpg';" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SECTION 2: MAIN SCREEN (MATCHING REFERENCE PHOTO) ================= -->
+  <main class="main-screen" id="mainScreen">
+    <!-- Layered Artwork Container (Up & Down Motion Animation) -->
+    <div class="art-viewport" id="artViewport">
+      <div class="art-layer-stack" id="layerStack">
+        <div class="photo-layer layer-31 pos-center"><img src="assets/human.webp" alt="Middle Human" /></div>
+        <div class="photo-layer layer-33 pos-one"><img src="assets/humans/img1.webp" alt="Human 1" /></div>
+        <div class="photo-layer layer-34 pos-two"><img src="assets/humans/img2.webp" alt="Human 2" /></div>
+        <div class="photo-layer layer-35 pos-three"><img src="assets/humans/img3.webp" alt="Human 3" /></div>
+        <div class="photo-layer layer-36 pos-four"><img src="assets/humans/img4.webp" alt="Human 4" /></div>
+        <div class="photo-layer layer-37 pos-five"><img src="assets/humans/img5.webp" alt="Human 5" /></div>
+        <div class="photo-layer layer-38 pos-six"><img src="assets/humans/img6.webp" alt="Human 6" /></div>
+        <div class="photo-layer layer-39 pos-seven"><img src="assets/humans/img7.webp" alt="Human 7" /></div>
+        <div class="photo-layer layer-40 pos-eight"><img src="assets/humans/img8.webp" alt="Human 8" /></div>
+        <div class="photo-layer layer-41 pos-nine"><img src="assets/humans/img9.webp" alt="Human 9" /></div>
+        <div class="photo-layer layer-42 pos-ten"><img src="assets/humans/img10.webp" alt="Human 10" /></div>
+        <div class="photo-layer layer-43 pos-eleven"><img src="assets/humans/img11.webp" alt="Human 11" /></div>
+        <div class="photo-layer layer-44 pos-twelve"><img src="assets/humans/img12.webp" alt="Human 12" /></div>
+        <div class="photo-layer layer-45 pos-thirteen"><img src="assets/humans/img13.webp" alt="Human 13" /></div>
+        <div class="photo-layer layer-46 pos-fourteen"><img src="assets/humans/img14.webp" alt="Human 14" /></div>
+        <div class="photo-layer layer-47 pos-fifteen"><img src="assets/humans/img15.webp" alt="Human 15" /></div>
+        <div class="photo-layer layer-48 pos-sixteen"><img src="assets/humans/img16.webp" alt="Human 16" /></div>
+      </div>
+    </div>
+
+    <!-- Header / Brand Logo matching reference photo -->
+    <header class="main-header" id="mainHeader">
+      <h1 class="brand-title">
+        <span class="word-fluffy">Fluffy</span>
+        <span class="word-hugs">H<span class="accent-u">Ü</span>GS</span>
+      </h1>
+    </header>
+
+    <div class="glCanvas_link">
+      <div class="glCanvas_link_item">
+        <a href="https://discord.com/invite/PmWf27cY6p" target="_blank" rel="noopener noreferrer">
+          <img src="assets/logo/discord.svg" alt="discord">
+        </a>
+      </div>
+      <div class="glCanvas_link_item">
+        <a href="https://opensea.io/ja/collection/fluffy-hugs89" target="_blank" rel="noopener noreferrer">
+          <img src="assets/logo/opensea.svg" alt="opensea">
+        </a>
+      </div>
+      <div class="glCanvas_link_item">
+        <a href="https://twitter.com/FluffyHUGS_prj" target="_blank" rel="noopener noreferrer">
+          <img src="assets/logo/twitter.svg" alt="twitter">
+        </a>
+      </div>
+    </div>
+    
+    <div class="collection-wrapper" id="collectionWrapper">
+      <svg class="ViewMore_svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 254.73 221.92" preserveAspectRatio="xMaxYMax " data-open_viewmore="false" data-fade="index">
+        <path fill="#203D99" class="ViewMore_svg_shape" d="m225.68,15.74c-25.47-21.39-54.72-22.72-79.62,6.86-24.91,29.57-40.17,54.92-72.67,49.26-32.5-5.66-62.08,14.2-71.32,44.78-9.24,30.58,13.36,75.03,52.18,90.3,38.81,15.27,72.91,24.12,122.72.19,49.81-23.93,68.79-79.19,75.51-108.95,6.71-29.76-1.32-61.04-26.79-82.44Z">
+        </path>
+        <text class="ViewMore_svg_text" x="81.9%" y="95.9%">
+          view collection
+        </text>
+      </svg>
+    </div>
+  </main>
+
+  <!-- ================= SECTION 3: PAGE 2 (GIRL LAYING DOWN WALKING SCENE) ================= -->
+  <section class="page2-screen" id="page2Screen">
+    <!-- Continuous Upward Rapid Motion of Bubbles in bg.png -->
+    <div class="page2-bg-wrapper" id="page2BgWrapper">
+      <div class="bubbles-track" id="bubblesTrack">
+        <img src="assets/bubbles.webp" alt="Bubbles 1" class="page2-bubble-img" />
+        <img src="assets/bubbles.webp" alt="Bubbles 2" class="page2-bubble-img" />
+        <img src="assets/bubbles.webp" alt="Bubbles 2" class="page2-bubble-img" />
+      </div>
+    </div>
+
+    <!-- Big Center Logo "Fluffy HÜGS" -->
+    <div class="page2-logo-container" id="page2Logo">
+      <h1 class="page2-brand-title">
+        <span class="p2-word-fluffy">Fluffy</span>
+        <span class="p2-word-hugs">H<span class="p2-accent-u">Ü</span>GS</span>
+      </h1>
+    </div>
+
+    <!-- Animated 180-Degree Laying Down Girl with Cat (Motion Hands & Legs) -->
+    <div class="page2-girl-container" id="page2Girl">
+      <div class="girl-body-rig">
+        <!-- Main Body (Torso, Head, Cat) -->
+        <div class="girl-part girl-torso">
+          <img src="assets/human.webp" alt="Girl Laying Down" class="page2-girl-img" onerror="this.src='assets/human.webp';" />
+        </div>
+        <!-- Right Hand (Holding phone, waving motion) -->
+        <div class="girl-part girl-hand" id="girlHand"></div>
+        <!-- Left Hand (Resting/floating near chest) -->
+        <div class="girl-part girl-arm-top" id="girlArmTop"></div>
+        <!-- Legs (Kicking/floating motion) -->
+        <div class="girl-part girl-legs" id="girlLegs"></div>
+      </div>
+    </div>
+    
+    <div class="glCanvas_link">
+      <div class="glCanvas_link_item">
+        <a href="https://discord.com/invite/PmWf27cY6p" target="_blank" rel="noopener noreferrer">
+          <img src="assets/logo/discord.svg" alt="discord">
+        </a>
+      </div>
+      <div class="glCanvas_link_item">
+        <a href="https://opensea.io/ja/collection/fluffy-hugs89" target="_blank" rel="noopener noreferrer">
+          <img src="assets/logo/opensea.svg" alt="opensea">
+        </a>
+      </div>
+      <div class="glCanvas_link_item">
+        <a href="https://twitter.com/FluffyHUGS_prj" target="_blank" rel="noopener noreferrer">
+          <img src="assets/logo/twitter.svg" alt="twitter">
+        </a>
+      </div>
+    </div>
+    
+    <div class="collection-wrapper" id="collectionWrapper">
+      <svg class="ViewMore_svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 254.73 221.92" preserveAspectRatio="xMaxYMax " data-open_viewmore="false" data-fade="index">
+        <path fill="#203D99" class="ViewMore_svg_shape" d="m225.68,15.74c-25.47-21.39-54.72-22.72-79.62,6.86-24.91,29.57-40.17,54.92-72.67,49.26-32.5-5.66-62.08,14.2-71.32,44.78-9.24,30.58,13.36,75.03,52.18,90.3,38.81,15.27,72.91,24.12,122.72.19,49.81-23.93,68.79-79.19,75.51-108.95,6.71-29.76-1.32-61.04-26.79-82.44Z">
+        </path>
+        <text class="ViewMore_svg_text" x="81.9%" y="95.9%">
+          view collection
+        </text>
+      </svg>
+    </div>
+  </section>
+
+  <!-- ================= SECTION 4: PAGE 3 (ANIMALS & MESSAGE SCENE) ================= -->
+  <section class="page3-screen" id="page3Screen">
+    <!-- Continuous Motion to Left ONLY for page3/animals.png -->
+    <div class="page3-bg-wrapper" id="page3BgWrapper">
+      <div class="animals-stream-track" id="animalsTrack">
+        <img src="assets/animals.webp" alt="Animals Background 1" class="page3-animals-layer" />
+        <img src="assets/animals.webp" alt="Animals Background 2" class="page3-animals-layer" />
+        <img src="assets/animals.webp" alt="Animals Background 2" class="page3-animals-layer" />
+      </div>
+    </div>
+
+    <!-- Top Right Corner Animal (Hanging & Motion Only) -->
+    <div class="page3-corner-animal" id="page3OneAnimal">
+      <img src="assets/burasagari.webp" alt="Hanging Animal Corner" class="corner-animal-img" />
+    </div>
+
+    <!-- Top Left Branding Logo -->
+    <header class="main-header page3-header" id="page3Header">
+      <h1 class="brand-title p3-logo-framed">
+        <span class="word-fluffy">Fluffy</span>
+        <span class="word-hugs">H<span class="accent-u">Ü</span>GS</span>
+      </h1>
+    </header>
+
+    <!-- Center-Left Standing Girl -->
+    <div class="page3-girl-container" id="page3Girl">
+      <img src="assets/human.webp" alt="Standing Girl" class="page3-girl-img" onerror="this.src='page2/girl.jpeg';" />
+    </div>
+
+    <!-- Center Japanese Message -->
+    <div class="page3-message-container" id="page3Message">
+      <div class="p3-text-line-group">
+        <p class="p3-text-line">ふ わ ふ わ の 動 物 た ち に 、</p>
+        <p class="p3-text-line">囲 ま れ て 暮 ら し た い</p>
+      </div>
+      <p class="p3-text-line p3-text-sub">ペ ッ ト や 動 物 が 大 好 き な あ な た へ</p>
+    </div>
+    
+    <div class="glCanvas_link">
+      <div class="glCanvas_link_item">
+        <a href="https://discord.com/invite/PmWf27cY6p" target="_blank" rel="noopener noreferrer">
+          <img src="assets/logo/discord.svg" alt="discord">
+        </a>
+      </div>
+      <div class="glCanvas_link_item">
+        <a href="https://opensea.io/ja/collection/fluffy-hugs89" target="_blank" rel="noopener noreferrer">
+          <img src="assets/logo/opensea.svg" alt="opensea">
+        </a>
+      </div>
+      <div class="glCanvas_link_item">
+        <a href="https://twitter.com/FluffyHUGS_prj" target="_blank" rel="noopener noreferrer">
+          <img src="assets/logo/twitter.svg" alt="twitter">
+        </a>
+      </div>
+    </div>
+    
+    <div class="collection-wrapper" id="collectionWrapper">
+      <svg class="ViewMore_svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 254.73 221.92" preserveAspectRatio="xMaxYMax " data-open_viewmore="false" data-fade="index">
+        <path fill="#203D99" class="ViewMore_svg_shape" d="m225.68,15.74c-25.47-21.39-54.72-22.72-79.62,6.86-24.91,29.57-40.17,54.92-72.67,49.26-32.5-5.66-62.08,14.2-71.32,44.78-9.24,30.58,13.36,75.03,52.18,90.3,38.81,15.27,72.91,24.12,122.72.19,49.81-23.93,68.79-79.19,75.51-108.95,6.71-29.76-1.32-61.04-26.79-82.44Z">
+        </path>
+        <text class="ViewMore_svg_text" x="81.9%" y="95.9%">
+          view collection
+        </text>
+      </svg>
+    </div>
+  </section>
+
+  <!-- GSAP CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="script.js"></script>
+</body>
 </html>
